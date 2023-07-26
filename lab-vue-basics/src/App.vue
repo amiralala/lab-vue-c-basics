@@ -3,13 +3,14 @@ import Nav from './components/Nav.vue';
 import Footer from './components/Footer.vue';
 import { ref, computed } from 'vue';
 import Conditional from './components/Conditional.vue';
+import list from './components/list.vue';
 
 const myText = ref("May it work");
 
 const reverseText = computed(() => {
   let reversed = "";
   const l = myText.value.length;
-  for (let i = 0; i <= l; i++){
+  for (let i = 0; i <= l; i++) {
     reversed += myText.value.charAt(l - i);
   }
   return reversed;
@@ -24,6 +25,8 @@ const reverseText = computed(() => {
   </p>
   <p>reversed string : {{ reverseText }}</p>
   <Conditional></Conditional>
+  <list></list>
+
   <Footer></Footer>
 </template>
 
