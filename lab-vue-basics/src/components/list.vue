@@ -13,10 +13,12 @@ const library = ref([
 <template>
     <ul>
         <li v-for="book in library">
-            {{ book.title }}
+            Title : {{ book.title }}, Author :  {{ book.author }}, Description : {{ book.description }}
         </li>
     </ul>
 </template>
 
 
-<style></style>
+<style>
+
+</style>

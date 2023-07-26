@@ -3,23 +3,24 @@
 
 <template>
 <nav>
-    <ul>
-        <li>home</li>
-        <li>projects</li>
-        <li>contact us</li>
+    <!-- Added classes in order not to "contaminate" other component default styling -->
+    <ul class="nav-ul">
+        <li class="nav-li">home</li>
+        <li class="nav-li">projects</li>
+        <li class="nav-li">contact us</li>
     </ul>
 </nav>
 
 </template>
 
 <style>
-ul{
+.nav-ul{
     display:flex ;
     flex-direction: row;
     justify-content:space-around;
 }
 
-li{
+.nav-li{
   list-style: none;  
   margin-right: 4px;
 }
